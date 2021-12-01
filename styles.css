@@ -1,36 +1,38 @@
 body{
     margin:0;
+    padding: 0;
 }
-.right .textaboutme .pic{
+.right .text-aboutme .name {
     float: right;
 }
-.left .textnav1 .textnav {
+.left {
     float: left;
 }   
+nav span {
+    display: inline-block;
+    padding: 14px 35px;
+    color: beige;
+}
 div.center {
     text-align: center;
     padding-bottom: 250px;
 }
-nav span {
-    padding: 14px 25px;
-}
-#topnav {
+#top-nav {
     background-color: dimgray;
-    color: beige;
     overflow: hidden;
     position: fixed;
     width: 100%;
     z-index: 1;
     font-size: 20px;
-    animation: fadein 1s;
     cursor: context-menu;
 }
-#topnav a {
+#top-nav a ,button a{
     float: right;
-    padding: 14px 25px;
+    padding: 15px 25px;
+    color: beige;
     text-decoration: none;
 }
-#topnav a:hover {
+#top-nav a:hover {
     background-color: #ddd;
     color: black;
   }
@@ -38,22 +40,21 @@ nav span {
 #home {
     text-align: center;
     margin-top: 0px;
-    padding-top: 270px;
-    padding-bottom: 5px;
+    padding-top: 310px;
     color: beige;
     font-size: 35px;
-    animation: fadein 3s;
+    animation: fadein 2s;
+    font-family: 'Shippori Antique', sans-serif;
 }
-#homebackground {
-    background-image: url('home-background.jpg');
+#home-background {
+    background-image: url('images/backgrounds/home-background.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
-button#toaboutme{
+a.button1, a.button2, a.button3{
     display: inline-block;
-    padding: 6px 30px;
+    padding: 8px 20px;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
     box-sizing: border-box;
@@ -64,77 +65,146 @@ button#toaboutme{
     background-color: rgba(255, 0, 0, 0.527);
     text-align: center;
     transition: all 0.2s;
-    animation: fadein 3s;
+    animation: fadein 2s;
 }
-button#toaboutme:hover{
+.button1:hover, .button2:hover, a.button3:hover {
     background-color:#4095c6;
 }
+@media all and (max-width:30em){
+     a.button1, a.button2, a.button3{
+    display:block;
+    margin:0.2em auto;
+    }
+}
+a.button2 {
+    margin-bottom: 70px;
+}
 
-#logo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 220px;
-    height: 65px
- }
-.pic {
+#aboutme-background {
+    background-image: url('images/backgrounds/aboutme-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.me {
+    float: left;
+    padding: 155px 90px 0px 90px;
     width: 25%;
-    margin-right: 0px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
  }
-.textbox {
-    background-color: #55d6aa;
-    margin: 0px 730px 0px 50px;
+
+.name {
+    margin-top: 0px;
+    padding: 110px 20px 0px 0px;
     animation: fadein 2s;
+    color: rgba(255, 0, 0, 0.527);
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Shippori Antique', sans-serif;
 }
 .text {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    padding: 14px 0px 15px 70px;
-}
-.rightheader {
-    margin: 10px 280px 0px 190px;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
     color: beige;
-    font-size: 25px;
-    font-family: 'Shippori Antique', sans-serif;
- }
- .name {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-    color: beige;
-    font-size: 25px;
-    font-family: 'Shippori Antique', sans-serif;
- }
-.textboxaboutme {
-    margin: 75px 20px 0px 670px;
-    background-color: #55d6aa;
+    font-family: 'Merriweather', serif;
+    padding: 0px 80px 10px 0px;
+    font-size: 18px;
+    line-height: 43px;
+    text-align: justify ;
+    text-justify: inter-word;
     animation: fadein 2s;
 }
-.description {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    padding: 45px 25px 0px 35px;
-    font-size: 18px;
-    line-height: 41px;
-    text-align: justify;
-    text-justify: inter-word;
- }
-  @keyframes fadein {
+@keyframes fadein {
     from { opacity: 0}
     to   { opacity: 1}
-  }
-  @keyframes slideInFromLeft {
+}
+@keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
-    }
+}
     100% {
         transform: translateX(0);
-    }
 }
-.leftheader {
-    float: left;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
-    color: beige;
-    font-size: 25px;
+}
+#workexp-background {
+    background-image: url('images/backgrounds/workexp-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+.header {
+    margin-top: 0;
+    padding-top: 70px;
+    text-align: center;
+    animation: fadein 2s;
+    color: rgba(255, 0, 0, 0.527);
+    font-size: 30px;
+    font-weight: 900;
     font-family: 'Shippori Antique', sans-serif;
- }
+}
+.subheader{
+    animation: fadein 2s;
+    color: beige;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Shippori Antique', sans-serif;
+}
+.banquetpic, .ninjavanpic, .nipponexpresspic{
+    width: 25%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.banquetpic {
+    margin: 10px 0px 100px 100px;
+}
+.ninjavanpic, .nipponexpresspic{
+    margin: 10px 0px 100px 70px;
+}
+.nipponexpresspic {
+    height: 190px; 
+}
+.workpic:hover {
+    opacity: 0.7;
+}
+#hidden, #hidden2, #hidden3 {
+    color: beige;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 43px;
+    text-align: justify ;
+    text-justify: inter-word;
+    animation: fadein 2s;
+}
+.work, .nationals{
+    color: mediumaquamarine;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Shippori Antique', sans-serif;
+}
+.work {
+    text-align: center;
+}
+.worktext {
+    padding: 0px 200px;
+    color: beige;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center ;
+    text-justify: inter-word;
+    animation: fadein 2s;
+}
+a.button3 {
+    margin-left: 525px;
+    margin-bottom: 180px;
+}
+#cocurricular-background {
+    background-image: url('images/backgrounds/cocurricular-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+.nationals {
+    padding: 30px 150px 0px 150px;
+}
+.overseas {
+    padding-left: 230px;
+}

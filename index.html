@@ -6,70 +6,133 @@
         <script type="text/javascript" src="javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Shippori+Antique&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav id="topnav">
+        <nav id="top-nav">
             <a> Contact Me </a>
             <a> Projects </a>
             <a> Skills </a>
-            <a> Experiences </a>
-            <a> About Me </a>
-            <a> Home </a>
+            <a> Co-Curricular </a>
+            <a href="#banquet-background" onclick="window.location.reload(true);"> Work </a>
+            <a href="#aboutme-background" onclick="window.location.reload(true);"> About Me </a>
+            <a href="#home-background" onclick="window.location.reload(true);"> Home </a>
             <span> Portfolio </span>
 
         </nav>
-        <section id="homebackground">
+        <section id="home-background">
             <div class="center">
                 <h1 id="home">
                     WELCOME TO MY PORTFOLIO
                 </h1>
-                <button id="toaboutme" onclick="window.location.href='#homebackground';">
-                    Start Now
-                </button>
+                    <a href="#aboutme-background" onclick="window.location.reload(true);" class="button1">
+                        Start >
+                    </a>
             </div>
         </section>
-        <section id="aboutmebackground">
-            <div class="column left">
+        <section>
+            <div id="aboutme-background">
+                <img src="images/picture-of-me.jpg" class="me"/>
                 <header>
                     <h1 class="name"> SYAHMI MIRHAN BIN ZULKIFLEE </h1>
                 </header>
-            </div>
-            <div class="column right">
-                <img src="picture-of-me.jpg" class="pic"/>
-            </div>
-        </section>
-        <section class="background">
-            <div class="column right">
-                <section>
-                    <article class="textboxaboutme">
-                        <header>
-                            <h1 class="rightheader"> ABOUT ME </h1>
-                        </header>
-                        <p class="description">
-                            I'm an active student in Ngee Ann Polytechnic, graduated 
-                            from Jurongville Secondary in 2020. Currently enrolled 
-                            in InfoComm Technology School studying Information 
-                            Technology in Year 1. I love to do Mathematics & play 
-                            sports such as basketball, football & tchoukball with my 
-                            friends during my free time. Despite all the challenges 
-                            I've had, I made it this far thanks to the friends & 
-                            teachers I've had for the past few years. I joined 
-                            Information Technology because I was intrigued at how 
-                            technology will be used more often in the future. Jobs in this 
-                            area are getting higher in demand & offers high-paying jobs. 
-                        </p>
-                    </article>
-                </section>
-                <br>
+                <p class="text">
+                    Hi! My name is Syahmi. I am an active student in Ngee Ann Polytechnic, currently enrolled 
+                    in InfoComm Technology School, studying Information 
+                    Technology course in Year 1. I love to do Mathematics & play 
+                    sports such as basketball, football & tchoukball with my 
+                    friends during my free time. Despite all the challenges 
+                    I've had, I made it this far thanks to the friends & 
+                    teachers I've had for the past few years. I joined 
+                    Information Technology because I was intrigued at how 
+                    technology will be used more often in the future. Jobs in this 
+                    area are getting higher in demand & offers high-paying jobs which is 
+                    why i am more interested in this pathway.
+                </p>
+                <a href="#banquet-background" onclick="window.location.reload(true);" class="button2">
+                    To know more about my work experiences! >
+                </a>
             </div>
         </section>
-        <section id="expbackground">
-            <section>
+        <section>
+            <div id="workexp-background">
                 <header>
-                    <h1 class="leftheader"> WORK EXPERIENCES  </h1>
+                    <h1 class="header"> WORK EXPERIENCE </h1>
+                    <h2 class="subheader"><em> Click image and see what happens! </em></h2>
                 </header>
-            </section>
+                <article id="hidden" style="display: none">
+                    <header class="work">
+                        BANQUET
+                    </header>
+                    <p class="worktext">
+                        During my Semester Year 1 poly break, I wasn't actually planning to work because
+                        I decided to rest after the semester. My friend introduced me to a flexible job that required 
+                        F&B services to important guests such as Prime Ministers. For instance, picking up and serving 
+                        food & beverages to them. I worked at a fixed location, which was the hotel called
+                        Ritz Carlton. Through this working experience, I developed good teamwork and social skills as 
+                        I had to communicate with other staffs to help carry out the wedding/events and also attend to 
+                        the guests and communicate with them.
+                    </p>
+                </article>
+                <article id="hidden2" style="display: none">
+                    <header class="work">
+                        WALKING PARCEL DELIVERY
+                    </header>
+                    <p class="worktext">
+                        I worked this job after I stopped working as a warehouse assistant at Nippon Express. I had
+                        few more months before my post-secondary education starts so I decided to look for another job
+                        as I did not want to waste any time sitting at home doing nothing. This job required me to work 
+                        with my friend & go door to door to deliver parcel at specific locations. To illustrate this,
+                        we had to load the van with parcels nicely, fit ourselves in the van full of parcels &
+                        travel to the chosen neighbourhood. Through this working experience, I learn how to build my social
+                        skills into talking to strangers & making sure I deliver correctly on time. I have to manage
+                        my time properly so that the delivery process does not take too long.
+
+                    </p>
+                </article>
+                <article id="hidden3" style="display: none">
+                    <header class="work">
+                        WAREHOUSE ASSISTANT
+                    </header>
+                    <p class="worktext">
+                        This job was my first proper part-time job where I had to wake up at 8am every morning. This was 
+                        right after I finished my O-Levels major exam, I was invited by four of my friends to work together.
+                        This job lasted me one month as we did not want to continue working. Being a warehouse assitant for UNIQLO
+                        required me to carry heavy boxes & pick specific clothing properly. I had to work overtime everyday except
+                        Sunday which was very tiring. Overall experience was fun & tough but I definitely learnt to be more 
+                        disciplined in waking up & persevering through to earn money.
+                    </p>
+                </article>
+                <a href="#workexp-background" onClick="showStuff()" >
+                    <img src="images/banquet.jfif" class="banquetpic">
+                </a>
+                <a href="#workexp-background" onClick="showStuff2()">
+                    <img src="images/ninjavan.png" class="ninjavanpic">
+                </a>
+                <a href="#workexp-background" onClick="showStuff3()" >
+                    <img src="images/nipponexpress.jfif" class="nipponexpresspic">
+                </a>
+                <a href="#cocurricular-background" onclick="window.location.reload(true);" class="button3">
+                    On to the Co-Curricular Experience! >
+                </a>
+            </div>
+        </section>
+        <section>
+            <div id="cocurricular-background">
+                <header>
+                    <h1 class="header"> C0-CURRICULAR EXPERIENCE </h1>
+                </header>
+                <subheader>
+                    <h2 class="nationals"> National trainings (Tchoukball) 
+                        <span class="overseas"> Overseas to Kuala Lumpur </span> 
+                    </h2>
+                </subheader>
+                <p>
+                    hello
+                    <span> hello </span>
+                </p>
+            </div>
         </section>
 
     </body>
