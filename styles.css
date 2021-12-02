@@ -2,7 +2,7 @@ body{
     margin:0;
     padding: 0;
 }
-.right .text-aboutme .name {
+.right .text-aboutme {
     float: right;
 }
 .left {
@@ -52,7 +52,7 @@ div.center {
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
-a.button1, a.button2, a.button3{
+a.gotoaboutme, a.gotoworkexp, a.gotocoexp, a.gotoprojects{
     display: inline-block;
     padding: 8px 20px;
     margin: 0 0.3em 0.3em 0;
@@ -67,17 +67,21 @@ a.button1, a.button2, a.button3{
     transition: all 0.2s;
     animation: fadein 2s;
 }
-.button1:hover, .button2:hover, a.button3:hover {
+.gotoaboutme:hover, .gotoworkexp:hover, .gotocoexp:hover, .gotoprojects:hover {
     background-color:#4095c6;
 }
 @media all and (max-width:30em){
-     a.button1, a.button2, a.button3{
+     a.gotoaboutme, a.gotoworkexp, a.gotocoexp, a.gotoprojects{
     display:block;
     margin:0.2em auto;
     }
 }
-a.button2 {
+a.gotoworkexp {
     margin-bottom: 70px;
+}
+a.gotocoexp, a.gotoprojects {
+    margin-left: 525px;
+    margin-bottom: 180px;
 }
 
 #aboutme-background {
@@ -103,15 +107,17 @@ a.button2 {
     font-weight: 900;
     font-family: 'Shippori Antique', sans-serif;
 }
-.text {
+.text, .nationalstext, .overseastext {
     color: beige;
     font-family: 'Merriweather', serif;
-    padding: 0px 80px 10px 0px;
     font-size: 18px;
-    line-height: 43px;
     text-align: justify ;
     text-justify: inter-word;
     animation: fadein 2s;
+}
+.text {
+    padding: 0px 80px 10px 0px;
+    line-height: 43px;
 }
 @keyframes fadein {
     from { opacity: 0}
@@ -148,15 +154,30 @@ a.button2 {
     text-align: center;
     font-family: 'Shippori Antique', sans-serif;
 }
-.banquetpic, .ninjavanpic, .nipponexpresspic{
-    width: 25%;
+.banquetpic, .ninjavanpic, .nipponexpresspic, .yuhuapic, .jurongvillepic, .nppic{
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .banquetpic {
     margin: 10px 0px 100px 100px;
 }
-.ninjavanpic, .nipponexpresspic{
+.yuhuapic, .jurongvillepic, .nppic {
+    height: 240px;
+}
+.banquetpic, .ninjavanpic, .nipponexpresspic, .nppic {
+    width: 25%;
+}
+.yuhuapic {
+    width: 16%;
+    margin: 10px 0px 100px 205px;
+}
+.ninjavanpic, .nipponexpresspic, .jurongvillepic {
     margin: 10px 0px 100px 70px;
+}
+.nppic {
+    margin: 10px 0px 100px 80px;
+}
+.jurongvillepic {
+    width: 17%;
 }
 .nipponexpresspic {
     height: 190px; 
@@ -164,7 +185,7 @@ a.button2 {
 .workpic:hover {
     opacity: 0.7;
 }
-#hidden, #hidden2, #hidden3 {
+#hideBanquet, #hideNinja, #hideAssistant, #hideYuhua, #hideJurongville, #hideNP {
     color: beige;
     font-family: 'Merriweather', serif;
     font-size: 18px;
@@ -173,16 +194,16 @@ a.button2 {
     text-justify: inter-word;
     animation: fadein 2s;
 }
-.work, .nationals{
+.work, .nationals, .education{
     color: mediumaquamarine;
     font-size: 25px;
     font-weight: 900;
     font-family: 'Shippori Antique', sans-serif;
 }
-.work {
+.work, .education {
     text-align: center;
 }
-.worktext {
+.worktext, .educationtext {
     padding: 0px 200px;
     color: beige;
     font-family: 'Merriweather', serif;
@@ -192,10 +213,6 @@ a.button2 {
     text-justify: inter-word;
     animation: fadein 2s;
 }
-a.button3 {
-    margin-left: 525px;
-    margin-bottom: 180px;
-}
 #cocurricular-background {
     background-image: url('images/backgrounds/cocurricular-background.jpg');
     background-repeat: no-repeat;
@@ -203,8 +220,34 @@ a.button3 {
     image-rendering: -webkit-optimize-contrast;
 }
 .nationals {
-    padding: 30px 150px 0px 150px;
+    padding: 0px 150px 0px 70px;
+    animation: fadein 2s;
 }
 .overseas {
     padding-left: 230px;
+}
+.nationalstext, .overseastext {
+    margin: 0;
+    display: inline;
+}
+.nationalstext {
+    float: left;
+    padding-left: 70px;
+    line-height: 30px;
+    width: 540px;
+}
+.overseastext {
+    padding-right: 10px;
+    line-height: 30px;
+    width: 540px;
+}
+.overseasright {
+    padding: 0px 90px 50px 690px;
+    animation: fadein 2s;
+}
+#education-background {
+    background-image: url('images/backgrounds/education-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }

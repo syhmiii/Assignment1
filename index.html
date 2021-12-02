@@ -2,35 +2,44 @@
 <html>
     <head>
         <title> Syahmi Mirhan's Portfolio Website </title>
+
+        <!-- LINK TO CSS & JS SCRIPTS-->
         <link rel="stylesheet" href="styles.css">
         <script type="text/javascript" src="javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- LINK TO GOOGLE FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Shippori+Antique&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- TOP NAVIGATION BAR -->
         <nav id="top-nav">
             <a> Contact Me </a>
             <a> Projects </a>
-            <a> Skills </a>
-            <a> Co-Curricular </a>
-            <a href="#banquet-background" onclick="window.location.reload(true);"> Work </a>
+            <a href="#education-background" onclick="window.location.reload(true);"> Education </a>
+            <a href="#cocurricular-background" onclick="window.location.reload(true);"> Co-Curricular </a>
+            <a href="#workexp-background" onclick="window.location.reload(true);"> Work </a>
             <a href="#aboutme-background" onclick="window.location.reload(true);"> About Me </a>
             <a href="#home-background" onclick="window.location.reload(true);"> Home </a>
             <span> Portfolio </span>
 
         </nav>
+
+        <!-- HOME SECTION -->
         <section id="home-background">
             <div class="center">
                 <h1 id="home">
                     WELCOME TO MY PORTFOLIO
                 </h1>
-                    <a href="#aboutme-background" onclick="window.location.reload(true);" class="button1">
+                    <a href="#aboutme-background" onclick="window.location.reload(true);" class="gotoaboutme">
                         Start >
                     </a>
             </div>
         </section>
+
+        <!-- ABOUT ME SECTION -->
         <section>
             <div id="aboutme-background">
                 <img src="images/picture-of-me.jpg" class="me"/>
@@ -50,18 +59,20 @@
                     area are getting higher in demand & offers high-paying jobs which is 
                     why i am more interested in this pathway.
                 </p>
-                <a href="#banquet-background" onclick="window.location.reload(true);" class="button2">
+                <a href="#workexp-background" onclick="window.location.reload(true);" class="gotoworkexp">
                     To know more about my work experiences! >
                 </a>
             </div>
         </section>
+
+        <!-- WORK EXPERIENCE SECTION -->
         <section>
             <div id="workexp-background">
                 <header>
                     <h1 class="header"> WORK EXPERIENCE </h1>
                     <h2 class="subheader"><em> Click image and see what happens! </em></h2>
                 </header>
-                <article id="hidden" style="display: none">
+                <article id="hideBanquet" style="display: none">
                     <header class="work">
                         BANQUET
                     </header>
@@ -75,7 +86,7 @@
                         the guests and communicate with them.
                     </p>
                 </article>
-                <article id="hidden2" style="display: none">
+                <article id="hideNinja" style="display: none">
                     <header class="work">
                         WALKING PARCEL DELIVERY
                     </header>
@@ -91,7 +102,7 @@
 
                     </p>
                 </article>
-                <article id="hidden3" style="display: none">
+                <article id="hideAssistant" style="display: none">
                     <header class="work">
                         WAREHOUSE ASSISTANT
                     </header>
@@ -104,20 +115,22 @@
                         disciplined in waking up & persevering through to earn money.
                     </p>
                 </article>
-                <a href="#workexp-background" onClick="showStuff()" >
+                <a href="#workexp-background" onClick="showBanquet()" >
                     <img src="images/banquet.jfif" class="banquetpic">
                 </a>
-                <a href="#workexp-background" onClick="showStuff2()">
+                <a href="#workexp-background" onClick="showNinja()">
                     <img src="images/ninjavan.png" class="ninjavanpic">
                 </a>
-                <a href="#workexp-background" onClick="showStuff3()" >
+                <a href="#workexp-background" onClick="showAssistant()" >
                     <img src="images/nipponexpress.jfif" class="nipponexpresspic">
                 </a>
-                <a href="#cocurricular-background" onclick="window.location.reload(true);" class="button3">
+                <a href="#cocurricular-background" onclick="window.location.reload(true);" class="gotocoexp">
                     On to the Co-Curricular Experience! >
                 </a>
             </div>
         </section>
+
+        <!--CO-CURRICULAR SECTION -->
         <section>
             <div id="cocurricular-background">
                 <header>
@@ -125,14 +138,101 @@
                 </header>
                 <subheader>
                     <h2 class="nationals"> National trainings (Tchoukball) 
-                        <span class="overseas"> Overseas to Kuala Lumpur </span> 
+                        <span class="overseas"> Overseas to Kuala Lumpur  </span> 
                     </h2>
                 </subheader>
-                <p>
-                    hello
-                    <span> hello </span>
-                </p>
+                <div class="nationalstext">
+                    I joined the National Tchoukball trials in 2019 and was selected to be part of the training team. 
+                    I met many people from different backgrounds and made friends with them. Even though the trainings
+                     was super tough, I had the motivation of my friends to keep going on. Currently, I am not inside 
+                     anymore as I wanted to focus more on my studies. The experience there taught me perseverance and 
+                     teamwork in life and adapt to more difficult situations in the future. There will always be a 
+                     solution to the problem if I try to find it. Fall down eight times, stand up nine times. That's 
+                     what I have learnt after suffering many tough journeys throughout my nationals trainings.
+                </div>
+                <div class="overseastext"> 
+                    <p class="overseasright">
+                        When I was in secondary 3, I was selected to go on an overseas trip with my fellow CCA mates. The 
+                    destination was in Kuala Lumpur, Malaysia. I spent 3 days 2 nights with my CCA mates & also students 
+                    from other CCA. We mostly trained together at different courts & competed with other teams that were 
+                    much older & stronger than us. It was a definitely tough playing against them but getting experiences 
+                    were what that was important. Other than that, I spent time with all my CCA mates and gotten closer in 
+                    no time. We had so many activities such as icebreaker games & Laser Tag. It was so enjoyable & memorable 
+                    use there was so much freedom I had during that 3 days as the Teachers In Charge did not care much.
+                    </p>
+                </div>
             </div>
+        </section>
+        <section>
+            <div id="education-background">
+                <header>
+                    <h1 class="header"> EDUCATION HISTORY </h1>
+                    <h2 class="subheader"><em> Click image and see what happens! </em></h2>
+                </header>
+                <article id="hideYuhua" style="display: none">
+                    <header class="education">
+                        YUHUA PRIMARY SCHOOL
+                    </header>
+                    <p class="educationtext">
+                        I joined Yuhua Primary School on Year 2011 when I was 7 year old. I made my first few friends
+                        & gotten more comfortable in talking and making friends with people of the same age. My grades 
+                        were average as I was not prioritising my studies & just having fun. Throughout this journey, I 
+                        learnt the importance of choosing the right friends & appreciating what life has for me. I achieved
+                        good PSLE results that allowed me to enter EXPRESS in many different schools.
+                    </p>
+                </article>
+                <article id="hideNP" style="display: none">
+                    <header class="education">
+                        NGEE ANN POLYTECHNIC
+                    </header>
+                    <p class="educationtext">
+                        I am currently in Ngee Ann Poly, studying Information Technology in Year 1. In the beginning,
+                        I had no interests in any course so I thought about the future, whether I wanted to enter 
+                        university. I realised technolgy will be more used in the future so it was a great opportunity
+                        for me to take the course while I had no interests. For now, I am barely coping with pile of work
+                        & assignments so I have to manage my time more.
+                    </p>
+                </article>
+                <article id="hideJurongville" style="display: none">
+                    <header class="education">
+                        JURONGVILLE SECONDARY SCHOOL
+                    </header>
+                    <p class="educationtext">
+                        In 2017, I chose Jurongville as my first choice & studied there for 4 years because most of
+                        my close friends were going there. I just wanted to keep my friendship and did not care about 
+                        where I was going to study, as long as the school is near my house. At first, I chose Hua Yi 
+                        but I realised I have to try to make friends again. Overall, it was better than i thought it will 
+                        be, even though I distant from my old friends but made more incredible close friends. Throughout the
+                        years, my grades kept improving as I was able to easily understand the contents and got a raw
+                        aggregate of 13 for my O-Levels. I was then able to enter my dream polytechnic school, Ngee Ann Poly.
+                    </p>
+                </article>
+                <a href="#education-background" onClick="showYuhua()" >
+                    <img src="images/yuhua-logo.jpg" class="yuhuapic">
+                </a>
+                <a href="#education-background" onClick="showNP()">
+                    <img src="images/ngeeann-logo.jpg" class="nppic">
+                </a>
+                <a href="#education-background" onClick="showJurongville()" >
+                    <img src="images/jvss-logo.jpg" class="jurongvillepic">
+                </a>
+                <a href="#cocurricular-background" onclick="window.location.reload(true);" class="gotoprojects">
+                    Showcasing my projects next! >
+                </a>
+            </div>
+            </div>
+        </section>
+        <section>
+            <form action="mailto:ssxdama@gmail.com" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="text" name="mail"><br>
+                Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+                </form>
         </section>
 
     </body>
