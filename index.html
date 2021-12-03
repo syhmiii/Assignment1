@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title> Syahmi Mirhan's Portfolio Website </title>
 
         <!-- LINK TO CSS & JS SCRIPTS-->
         <link type="text/css" rel="stylesheet" href="normalize.css" />
         <link type="text/css" rel="stylesheet" href="styles.css">
-        <script type="text/javascript" src="javascript.js"></script>
+        <script src="javascript.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <!-- LINK TO GOOGLE FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Shippori+Antique&display=swap" rel="stylesheet">
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -44,7 +45,7 @@
         <!-- ABOUT ME SECTION -->
         <section>
             <div id="aboutme-background">
-                <img src="images/picture-of-me.jpg" class="me"/>
+                <img src="images/picture-of-me.jpg" alt="Picture of me" class="me" />
                 <header>
                     <h1 class="name"> SYAHMI MIRHAN BIN ZULKIFLEE </h1>
                 </header>
@@ -74,7 +75,7 @@
                     <h1 class="header"> WORK EXPERIENCE </h1>
                     <h2 class="subheader"><em> Click image and see what happens! </em></h2>
                 </header>
-                <article id="hideBanquet" style="display: none">
+                <div id="hideBanquet" style="display: none">
                     <header class="work">
                         BANQUET
                     </header>
@@ -87,8 +88,8 @@
                         I had to communicate with other staffs to help carry out the wedding/events and also attend to 
                         the guests and communicate with them.
                     </p>
-                </article>
-                <article id="hideNinja" style="display: none">
+                </div>
+                <div id="hideNinja" style="display: none">
                     <header class="work">
                         WALKING PARCEL DELIVERY
                     </header>
@@ -103,8 +104,8 @@
                         my time properly so that the delivery process does not take too long.
 
                     </p>
-                </article>
-                <article id="hideAssistant" style="display: none">
+                </div>
+                <div id="hideAssistant" style="display: none">
                     <header class="work">
                         WAREHOUSE ASSISTANT
                     </header>
@@ -116,15 +117,15 @@
                         Sunday which was very tiring. Overall experience was fun & tough but I definitely learnt to be more 
                         disciplined in waking up & persevering through to earn money.
                     </p>
-                </article>
+                </div>
                 <a href="#workexp-background" onClick="showBanquet()" >
-                    <img src="images/banquet.jfif" class="banquetpic">
+                    <img src="images/banquet.jfif" alt="Ritz Carlton Hotel" class="banquetpic">
                 </a>
                 <a href="#workexp-background" onClick="showNinja()">
-                    <img src="images/ninjavan.png" class="ninjavanpic">
+                    <img src="images/ninjavan.png" alt="Ninja Van Logo" class="ninjavanpic">
                 </a>
                 <a href="#workexp-background" onClick="showAssistant()" >
-                    <img src="images/nipponexpress.jfif" class="nipponexpresspic">
+                    <img src="images/nipponexpress.jfif" alt="Nippon Express Company" class="nipponexpresspic">
                 </a>
                 <a href="#cocurricular-background" onclick="window.location.reload(true);" class="gotocoexp">
                     On to the Co-Curricular Experience! >
@@ -137,12 +138,10 @@
             <div id="cocurricular-background">
                 <header>
                     <h1 class="header"> C0-CURRICULAR EXPERIENCE </h1>
-                </header>
-                <subheader>
                     <h2 class="nationals"> National trainings (Tchoukball) 
                         <span class="overseas"> Overseas to Kuala Lumpur  </span> 
                     </h2>
-                </subheader>
+                </header>
                 <div class="nationalstext">
                     I joined the National Tchoukball trials in 2019 and was selected to be part of the training team. 
                     I met many people from different backgrounds and made friends with them. Even though the trainings
@@ -177,7 +176,7 @@
                     <h2 class="subheader"><em> Click image and see what happens! </em></h2>
                 </header>
                 <!-- TEXTS ARE HIDDEN UNTIL FUNCTION IS CALLED OUT (WHEN IMAGE IS CLICKED) -->
-                <article id="hideYuhua" style="display: none">
+                <div id="hideYuhua" style="display: none">
                     <header class="education">
                         YUHUA PRIMARY SCHOOL
                     </header>
@@ -188,8 +187,8 @@
                         learnt the importance of choosing the right friends & appreciating what life has for me. I achieved
                         good PSLE results that allowed me to enter EXPRESS in many different schools.
                     </p>
-                </article>
-                <article id="hideNP" style="display: none">
+                </div>
+                <div id="hideNP" style="display: none">
                     <header class="education">
                         NGEE ANN POLYTECHNIC
                     </header>
@@ -200,8 +199,8 @@
                         for me to take the course while I had no interests. For now, I am barely coping with pile of work
                         & assignments so I have to manage my time more.
                     </p>
-                </article>
-                <article id="hideJurongville" style="display: none">
+                </div>
+                <div id="hideJurongville" style="display: none">
                     <header class="education">
                         JURONGVILLE SECONDARY SCHOOL
                     </header>
@@ -214,16 +213,16 @@
                         years, my grades kept improving as I was able to easily understand the contents and got a raw
                         aggregate of 13 for my O-Levels. I was then able to enter my dream polytechnic school, Ngee Ann Poly.
                     </p>
-                </article>
+                </div>
                 <!--SAME SIZE IMAGES -->
                 <a href="#education-background" onClick="showYuhua()" >
-                    <img src="images/yuhua-logo.jpg" class="yuhuapic">
+                    <img src="images/yuhua-logo.jpg" alt="Yuhua Primary School Logo" class="yuhuapic">
                 </a>
                 <a href="#education-background" onClick="showNP()">
-                    <img src="images/ngeeann-logo.jpg" class="nppic">
+                    <img src="images/ngeeann-logo.jpg" alt="Ngee Ann Poly Logo" class="nppic">
                 </a>
                 <a href="#education-background" onClick="showJurongville()" >
-                    <img src="images/jvss-logo.jpg" class="jurongvillepic">
+                    <img src="images/jvss-logo.jpg" alt="Jurongville Secondary School Logo" class="jurongvillepic">
                 </a>
                 <!--BUTTON TO ANCHOR TO ANOTHER SECTION -->
                 <a href="#facebook-background" onclick="window.location.reload(true);" class="gotoprojects">
@@ -239,11 +238,11 @@
                     <h1 class="header"> FIRST PROJECT </h1>
                 </header>
                 <!--IMAGE -->
-                <img src="images/facebook.jpg" class="projectpic"/>
+                <img src="images/facebook.jpg" alt="Facebook Logo" class="projectpic"/>
                 <article>
                      <!-- HEADER OF ARTICLE -->
                     <header>
-                        <h1 class="project"> FACEBOOK </h1>
+                        <h2 class="project"> FACEBOOK </h2>
                     </header>
                     <div class="projecttext">
                         Facebook is a social networking service originally launched as FaceMash on October 28, 2003.
@@ -256,11 +255,10 @@
                     </div>
                     <!-- BUTTONS TO ANCHOR TO ANOTHER SECTION -->
                     <a href="#FIVEG-background" onclick="window.location.reload(true);" class="goto2nd">
-                        2nd Project <span>
-                            <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
-                                3rd Project
-                            </a>
-                        </span>
+                        2nd Project 
+                    </a>
+                    <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
+                        3rd Project
                     </a>
                 </article>
             </div>
@@ -271,10 +269,10 @@
                 <header>
                     <h1 class="header"> SECOND PROJECT </h1>
                 </header>
-                <img src="images/5G.jpg" class="projectpic"/>
+                <img src="images/5G.jpg" alt="Image of 5G Technology" class="projectpic"/>
                 <article>
                     <header>
-                        <h1 class="project"> 5G TECHNOLOGY </h1>
+                        <h2 class="project"> 5G TECHNOLOGY </h2>
                     </header>
                     <div class="projecttext">
                         In telecommunications, 5G is the fifth generation technology standard for broadband cellular 
@@ -286,11 +284,10 @@
                         they will have greater bandwidth.
                     </div>
                     <a href="#facebook-background" onclick="window.location.reload(true);" class="goto2nd">
-                        1st Project <span>
-                            <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
-                                3rd Project
-                            </a>
-                        </span>
+                        1st Project 
+                    </a>
+                    <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
+                        3rd Project
                     </a>
                 </article>
             </div>
@@ -301,10 +298,10 @@
                 <header>
                     <h1 class="header"> THIRD PROJECT </h1>
                 </header>
-                <img src="images/gps.jpg" class="projectpic"/>
+                <img src="images/gps.jpg" alt="Image of Global POsitioning System" class="projectpic"/>
                 <article>
                     <header>
-                        <h1 class="project"> GLOBAL POSITIONING SYSTEM </h1>
+                        <h2 class="project"> GLOBAL POSITIONING SYSTEM </h2>
                     </header>
                     <div class="projecttext">
                         In telecommunications, 5G is the fifth generation technology standard for broadband cellular 
@@ -316,17 +313,14 @@
                         they will have greater bandwidth.
                     </div>
                     <a href="#facebook-background" onclick="window.location.reload(true);" class="goto2nd">
-                        1st Project <span>
-                            <a href="#FIVEG-background" onclick="window.location.reload(true);" class="goto3rd">
-                                2nd Project
-                            </a>
-                        </span> <span>
-                            <a href="#contactme-background" onclick="window.location.reload(true);" class="contactmebutton">
-                                Contact me here!
-                            </a>
-                        </span>
-                    
+                        1st Project 
                     </a>
+                    <a href="#FIVEG-background" onclick="window.location.reload(true);" class="goto3rd">
+                        2nd Project
+                    </a>
+                    <a href="#contactme-background" onclick="window.location.reload(true);" class="contactmebutton">
+                        Contact me here!
+                    </a>      
                 </article>
             </div>
         </section>
@@ -364,13 +358,13 @@
                         email address or phone number!</p>
                   <form>
                     <div class="input-box">
-                      <input type="name" placeholder="Enter your name">
+                      <input type="text" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
                       <input type="email" placeholder="Enter your email">
                     </div>
                     <div class="input-box message-box">
-                        <input type="message" placeholder="Enter Message">
+                        <input type="text" placeholder="Enter Message">
                     </div>
                      <!-- LINK BUTTON TO THANK YOU PAGE  -->
                     <div class="button">
@@ -387,7 +381,7 @@
                 <header>
                     <h1 class="header"> THAT IS ALL FOR MY PORTFOLIO! </h1>
                 </header>
-                <img src="images/thankyou.jpg" class="thankyou">
+                <img src="images/thankyou.jpg" alt="Thank You Message" class="thankyou">
                 <a href="#home-background" onclick="window.location.reload(true);" class="gotohome">
                     Back to Home
                 </a>
