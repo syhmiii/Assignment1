@@ -146,6 +146,9 @@ a.gotocoexp, a.gotoprojects {
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
+#workexp-background .header {
+    padding-top: 150px;
+}
 .header {
     margin-top: 0;
     padding-top: 7%;
