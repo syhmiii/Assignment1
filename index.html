@@ -12,12 +12,13 @@
         <!-- LINK TO GOOGLE FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Shippori+Antique&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <!-- TOP NAVIGATION BAR -->
         <nav id="top-nav">
-            <a> Contact Me </a>
-            <a> Projects </a>
+            <a href="#contactme-background" onclick="window.location.reload(true);"> Contact Me </a>
+            <a href="#facebook-background" onclick="window.location.reload(true);"> Projects </a>
             <a href="#education-background" onclick="window.location.reload(true);"> Education </a>
             <a href="#cocurricular-background" onclick="window.location.reload(true);"> Co-Curricular </a>
             <a href="#workexp-background" onclick="window.location.reload(true);"> Work </a>
@@ -161,14 +162,20 @@
                     use there was so much freedom I had during that 3 days as the Teachers In Charge did not care much.
                     </p>
                 </div>
+                <!--BUTTON TO ANCHOR TO ANOTHER SECTION -->
+                <a href="#education-background" onclick="window.location.reload(true);" class="gotocoexp">
+                    More about my Education History! >
+                </a>
             </div>
         </section>
+        <!--EDUCATIONAL HISTORY SECTION -->
         <section>
             <div id="education-background">
                 <header>
                     <h1 class="header"> EDUCATION HISTORY </h1>
                     <h2 class="subheader"><em> Click image and see what happens! </em></h2>
                 </header>
+                <!-- TEXTS ARE HIDDEN UNTIL FUNCTION IS CALLED OUT (WHEN IMAGE IS CLICKED) -->
                 <article id="hideYuhua" style="display: none">
                     <header class="education">
                         YUHUA PRIMARY SCHOOL
@@ -207,6 +214,7 @@
                         aggregate of 13 for my O-Levels. I was then able to enter my dream polytechnic school, Ngee Ann Poly.
                     </p>
                 </article>
+                <!--SAME SIZE IMAGES -->
                 <a href="#education-background" onClick="showYuhua()" >
                     <img src="images/yuhua-logo.jpg" class="yuhuapic">
                 </a>
@@ -216,24 +224,178 @@
                 <a href="#education-background" onClick="showJurongville()" >
                     <img src="images/jvss-logo.jpg" class="jurongvillepic">
                 </a>
-                <a href="#cocurricular-background" onclick="window.location.reload(true);" class="gotoprojects">
+                <!--BUTTON TO ANCHOR TO ANOTHER SECTION -->
+                <a href="#facebook-background" onclick="window.location.reload(true);" class="gotoprojects">
                     Showcasing my projects next! >
                 </a>
             </div>
+        </section>
+        <!-- PROJECTS SECTION -->
+        <section>
+            <!-- 1ST PROJECT SECTION -->
+            <div id="facebook-background">
+                <header>
+                    <h1 class="header"> FIRST PROJECT </h1>
+                </header>
+                <!--IMAGE -->
+                <img src="images/facebook.jpg" class="projectpic"/>
+                <article>
+                     <!-- HEADER OF ARTICLE -->
+                    <header>
+                        <h1 class="project"> FACEBOOK </h1>
+                    </header>
+                    <div class="projecttext">
+                        Facebook is a social networking service originally launched as FaceMash on October 28, 2003.
+                        It only allows 13 years old & above age requirement to have a facebook account with a
+                        valid email address. I got the inspiration to create a new website coming from an editorial 
+                        in the Crimson about Facemash (Facebook). I intended to create a website that could connect 
+                        people around the university. As of February 2011, Facebook had become the largest online photo 
+                        host, being cited by Facebook application and online photo aggregator Pixable as expecting to 
+                        have 100 billion photos by summer 2011.
+                    </div>
+                    <!-- BUTTONS TO ANCHOR TO ANOTHER SECTION -->
+                    <a href="#FIVEG-background" onclick="window.location.reload(true);" class="goto2nd">
+                        2nd Project <span>
+                            <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
+                                3rd Project
+                            </a>
+                        </span>
+                    </a>
+                </article>
             </div>
         </section>
         <section>
-            <form action="mailto:ssxdama@gmail.com" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Comment:<br>
-                <input type="text" name="comment" size="50"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
-                </form>
+            <!-- 2ND PROJECT SECTION -->
+            <div id="FIVEG-background">
+                <header>
+                    <h1 class="header"> SECOND PROJECT </h1>
+                </header>
+                <img src="images/5G.jpg" class="projectpic"/>
+                <article>
+                    <header>
+                        <h1 class="project"> 5G TECHNOLOGY </h1>
+                    </header>
+                    <div class="projecttext">
+                        In telecommunications, 5G is the fifth generation technology standard for broadband cellular 
+                        networks, which cellular phone companies began deploying worldwide in 2019, and is the planned 
+                        successor to the 4G networks which provide connectivity to most current cellphones. 5G networks 
+                        are predicted to have more than 1.7 billion subscribers worldwide by 2025, according to the GSM 
+                        Association. All 5G wireless devices in a cell are connected to the Internet and telephone network 
+                        by radio waves through a local antenna in the cell. The main advantage of the new networks is that 
+                        they will have greater bandwidth.
+                    </div>
+                    <a href="#facebook-background" onclick="window.location.reload(true);" class="goto2nd">
+                        1st Project <span>
+                            <a href="#GPS-background" onclick="window.location.reload(true);" class="goto3rd">
+                                3rd Project
+                            </a>
+                        </span>
+                    </a>
+                </article>
+            </div>
         </section>
-
+        <section>
+            <!-- THIRD PROJECT SECTION -->
+            <div id="GPS-background">
+                <header>
+                    <h1 class="header"> THIRD PROJECT </h1>
+                </header>
+                <img src="images/gps.jpg" class="projectpic"/>
+                <article>
+                    <header>
+                        <h1 class="project"> GLOBAL POSITIONING SYSTEM </h1>
+                    </header>
+                    <div class="projecttext">
+                        In telecommunications, 5G is the fifth generation technology standard for broadband cellular 
+                        networks, which cellular phone companies began deploying worldwide in 2019, and is the planned 
+                        successor to the 4G networks which provide connectivity to most current cellphones. 5G networks 
+                        are predicted to have more than 1.7 billion subscribers worldwide by 2025, according to the GSM 
+                        Association. All 5G wireless devices in a cell are connected to the Internet and telephone network 
+                        by radio waves through a local antenna in the cell. The main advantage of the new networks is that 
+                        they will have greater bandwidth.
+                    </div>
+                    <a href="#facebook-background" onclick="window.location.reload(true);" class="goto2nd">
+                        1st Project <span>
+                            <a href="#FIVEG-background" onclick="window.location.reload(true);" class="goto3rd">
+                                2nd Project
+                            </a>
+                        </span> <span>
+                            <a href="#home-background" onclick="window.location.reload(true);" class="contactmebutton">
+                                Contact me here!
+                            </a>
+                        </span>
+                    
+                    </a>
+                </article>
+            </div>
+        </section>
+         <!-- CONTACT ME SECTION -->
+        <section id="contactme-background">
+            <header>
+                <h1 class="header"> CONTACT ME </h1>
+            </header>
+            <div class="container">
+                <div class="content">
+                  <div class="left-side">
+                    <div class="address details">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="topic">Address</div>
+                      <div class="text-one">Surkhet, NP12</div>
+                      <div class="text-two">Birendranagar 06</div>
+                    </div>
+                    <div class="phone details">
+                      <i class="fas fa-phone-alt"></i>
+                      <div class="topic">Phone</div>
+                      <div class="text-one">+0098 9893 5647</div>
+                      <div class="text-two">+0096 3434 5678</div>
+                    </div>
+                    <div class="email details">
+                      <i class="fas fa-envelope"></i>
+                      <div class="topic">Email</div>
+                      <div class="text-one">codinglab@gmail.com</div>
+                      <div class="text-two">info.codinglab@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p class="contacttext">If you have any types of queries related to my tutorial, 
+                        you can send me message from here. You can also contact me to my
+                        email address or phone number!</p>
+                  <form>
+                    <div class="input-box">
+                      <input type="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                      <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                        <input type="message" placeholder="Enter Message">
+                    </div>
+                     <!-- LINK BUTTON TO THANK YOU PAGE  -->
+                    <div class="button">
+                      <a href="#thankyou-background" onclick="window.location.reload(true);" class="gotothankyou" >Send Now</a>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+        </section>
+         <!-- END OF WEBSITE & A THANKYOU MESSAGE -->
+        <section id="thankyou-background">
+            <div>
+                <header>
+                    <h1 class="header"> THAT IS ALL FOR MY PORTFOLIO! </h1>
+                </header>
+                <img src="images/thankyou.jpg" class="thankyou">
+                <a href="#home-background" onclick="window.location.reload(true);" class="gotohome">
+                    Back to Home
+                </a>
+                <footer>
+                    <p class="text-footer">
+                        Copyright @-All rights are reserved
+                    </p>
+                </footer>
+            </div>
+        </section>
     </body>
 </html>

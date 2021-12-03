@@ -58,14 +58,14 @@ Information such as Phone Number, Email Address, LinkedIn Account will be displa
     * Try to play around with the buttons to see whether animations are reloaded after clicked
 
 ### Bugs & problems
-* After buttons are clicked, sometimes it goes to the desired section but some elements may be cut off
+* After button for WORK EXPERIENCE SECTION are clicked, sometimes it goes to the desired section but some elements may be cut off (Need to keep clicking until it works)
 * When iamges are clicked, it is hard to fit the images & texts in the same screen size
 
 ### DIfferent browsers & screen sizes
-
+* Only for small screen sizes, all browsers allowed
 ## Credits
 ### Content
-* 
+* The text on Facebook Project section is taken from [Wikipedia Facebook](https://en.wikipedia.org/wiki/History_of_Facebook)
 
 ### Media
 * The photos used in this site were obtained from 
