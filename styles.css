@@ -262,6 +262,12 @@ a.gotocoexp, a.gotoprojects {
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
+#education-background .header {
+    padding-top: 150px;
+}
+#FIVEG-background .header {
+    padding-top: 125px;
+}
 
 /* FOR MY PROJECT SECTION */
 #facebook-background, #FIVEG-background, #GPS-background{
